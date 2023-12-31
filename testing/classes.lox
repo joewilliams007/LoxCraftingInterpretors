@@ -1,0 +1,46 @@
+class X {
+    doY(a) {
+        print a;
+    }
+}
+
+class Y < X {
+    init (x,y){
+        this.x = x;
+        this.y = y;
+    }
+    doZ(a,b) {
+        super.doY(a);
+    }
+    doBlaBla() {
+        print this.lol;
+    }
+}
+
+var _y = Y("muhahahaha","dragon");
+_y.doZ("uhm","lol");
+_y.lol = "HAHA";
+print _y.lol;
+
+_y.doBlaBla();
+
+var num = -100;
+
+fun hehe(uhm) {
+    print "LOOOOOOOOL "+uhm;
+    print -num;
+}
+
+print _y.x;
+print _y.y;
+
+var l;
+print l;
+
+hehe(_y.lol);
+
+print clock();
+
+for (var i = 0; i < 10; i = i+1) {
+    print clock();
+}
